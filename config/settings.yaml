@@ -1,0 +1,36 @@
+app:
+  name: "PlainAPI"
+  version: "1.0.0"
+  description: "AI-powered API Simplification System"
+  debug: ${APP_DEBUG}
+  port: ${APP_PORT}
+  host: ${APP_HOST}
+
+nasa_api:
+  base_url: "https://api.nasa.gov"
+  api_key: ${NASA_API_KEY}
+  endpoints:
+    apod: "/planetary/apod"
+    mars_photos: "/mars-photos/api/v1/rovers/{rover}/photos"
+    earth_imagery: "/planetary/earth/imagery"
+    neo_feed: "/neo/rest/v1/feed"
+    image_video_library: "https://images-api.nasa.gov/search"
+
+llm:
+  primary_model: ${PRIMARY_LLM_MODEL}
+  embedding_model: ${EMBEDDING_MODEL}
+  max_tokens: ${MAX_TOKENS}
+  temperature: ${LLM_TEMPERATURE}
+  timeout: 30
+  max_retries: 3
+
+vector_store:
+  path: ${VECTOR_STORE_PATH}
+  collection_name: "nasa_api_docs"
+  embedding_dimension: 384
+  distance_metric: "cosine"
+
+document_processing:
+  chunk_size: 1000
+  chunk_overlap: 200
+  min_chunk_length: 50

@@ -1,0 +1,36 @@
+# Core
+fastapi
+uvicorn[standard]
+pydantic
+python-dotenv
+
+# Data Processing
+beautifulsoup4
+requests
+aiohttp
+httpx
+
+# Vector Store & Embeddings
+chromadb
+sentence-transformers
+langchain
+openai
+
+# LLM
+litellm
+anthropic
+
+# Utilities
+redis
+celery
+prometheus-client
+structlog
+python-json-logger
+
+# Development
+pytest
+pytest-asyncio
+black
+flake8
+mypy
+

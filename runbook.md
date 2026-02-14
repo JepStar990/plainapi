@@ -1,5 +1,5 @@
 # 1. Clone and setup
-git clone <repository>
+git clone https://github.com/JepStar990/plainapi.git
 cd plainapi
 
 # 2. Install dependencies
